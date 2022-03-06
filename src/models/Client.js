@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
 const { getTime } = require('../funcs.js');
-
+const fs = require('fs')
 /**
  * @param {Client extends Discord.Client}
  */
-
 class Client extends Discord.Client {
     constructor(options = {}) {
         super(options)
