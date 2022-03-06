@@ -4,14 +4,14 @@ const { Client } = require('./models/Client.js');
 const { CommandHandler } = require('./models/handlers/CommandHandler.js');
 
 /**
-* @param {new Client()} extends the baseClient() of discord.
+* @param extends the baseClient() of discord.
 * Define this, you'll need to access this later on.
 */
 const client = new Client({
     /**
     * Intents are required since Discord's api v9.
-    * @type Number[] || FLAGS[]
-    * Required: yes
+    * @type {number[] | FLAGS}
+    * @required
     */
     intents: [
         Intents.FLAGS.GUILDS,
@@ -19,8 +19,8 @@ const client = new Client({
     ],
 
     /**
-    * @param {ownerId} is an array of ownerId's.
-    * @type String[]
+    * An array of ownerIds.
+    * @type {string[]}
     * Required: no
     */
     ownerId: ['482513687417061376'],
