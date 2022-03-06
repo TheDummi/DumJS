@@ -22,7 +22,7 @@ class Command extends CommandHandler {
         /**
          * @param {name} the name of the commands
          * @type {String}
-         * Required: yes
+         * @required 
          */
         this.name = typeof name == 'string' ? name : console.log(new Error(`Expected name to be a string, got ${typeof name} instead.`))
 
