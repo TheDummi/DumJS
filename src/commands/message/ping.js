@@ -1,3 +1,7 @@
+/**
+ * A test command non class way.
+ */
+
 module.exports = {
     name: 'ping',
     aliases: 'p',

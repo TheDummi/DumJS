@@ -4,6 +4,9 @@ class Command extends CommandHandler {
     constructor(id, options = {}) {
         super(id, options)
 
+        /**
+         * @param {options} for commands.
+         */
         const {
             name = "",
             type = 'message',
@@ -16,10 +19,22 @@ class Command extends CommandHandler {
             data = {}
         } = options;
 
+        /**
+         * @param {name} the name of the commands
+         * @type {String}
+         * Required: yes
+         */
         this.name = typeof name == 'string' ? name : console.log(new Error(`Expected name to be a string, got ${typeof name} instead.`))
+
+
+        /**
+         * ! The rest is work in progress.
+         */
     }
     exec() {
-
+        /**
+         * ! The rest is work in progress.
+         */
     }
 }
 

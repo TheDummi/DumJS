@@ -2,6 +2,10 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { color } = require('../../data/config.json');
 const Discord = require('discord.js');
 
+/**
+ * A test command for interactions
+ */
+
 module.exports = {
     detailedDescription: "e",
     category: "Info",

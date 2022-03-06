@@ -4,6 +4,10 @@ const Discord = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
+/**
+ * ! This is all still work in progress!
+ */
+
 class CommandHandler {
     constructor(client) {
         client.commands = new Discord.Collection()
