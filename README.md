@@ -4,7 +4,7 @@ A work in progress lightweight class based framework.
 
 ## Command handler
 
-Can handler both interaction and message commands with this command handler.
+Can handle both interaction and message commands with this command handler.
 
 ## Event handler
 
