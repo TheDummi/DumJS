@@ -10,7 +10,7 @@ Define this, you'll need to access this later on.
 const client = new Client({
     /*
     Intents are required since Discord's api v9.
-    @type: Number[] || FLAGS[]
+    @type {Number[] || FLAGS[]}
     Required: yes
     */
     intents: [
@@ -20,42 +20,42 @@ const client = new Client({
 
     /*
     @param {ownerId} is an array of ownerId's.
-    @type: String[]
+    @type {String[]}
     Required: no
     */
     ownerId: ['482513687417061376'],
 
     /*
     @param {clientId} is the ID of the bot, this is for application commands.
-    @type: String
+    @type {String}
     Required: while using application commands: yes, while using message commands: no
     */
     clientId: '847559736768987157',
 
     /*
     @param {guildId} is the ID of the server you test your application commands in.
-    @type: String
+    @type {String}
     Required: while using application commnads: yes, while using message commands: no
     */
     guildId: '784094726432489522',
 
     /*
     @param {prefix} is an array of the prefix' you want the bot to respond to.
-    @type: String[]
+    @type {String[]}
     Required: while using application commands: no, while using message commands: yes
     */
     prefix: config.prefix,
 
     /*
     @param {token} this is the bot's token found on Discord Developer Portal
-    @type: String
+    @type {String}
     Required: yes
     */
     token: config.token,
 
     /*
     @param {logging} this will display an online log, `<yourCurrentTime> | <yourBotName> logged in.`
-    @type: Boolean
+    @type {Boolean}
     Required: no
     */
     logging: true
@@ -79,21 +79,21 @@ commandHandler.load(
 
     /*
     @param {type} this is to load the type of commands
-    @type: 'interaction' || 'message'
+    @type {'interaction' || 'message'}
     Required: yes
     */
     'message',
 
     /*
     @param {path} this is where you have your commands saved.
-    @type: String
+    @type {String}
     Required: yes
     */
     './src/commands/message',
 
     /*
     @param {logging} this is another logger but this time for commands. `<yourCurrentTime> | Loaded message commands: <yourCommands>.`
-    @type: Boolean
+    @type {Boolean}
     Required: yes
     */
     true
@@ -107,28 +107,28 @@ commandHandler.load(
 
     /*
     @param {@type} this is to load the @type of commands
-    @type: 'interaction' || 'message'
+    @type {'}interaction' || 'message'
     Required: yes
     */
     'message',
 
     /*
     @param {path} this is where you have your commands saved.
-    @type: String
+    @type {String}
     Required: yes
     */
     './src/commands/message',
 
     /*
     @param {logging} this is another logger but this time for commands. `<yourCurrentTime> | Loaded message commands: <yourCommands>.`
-    @type: Boolean
+    @type {Boolean}
     Required: yes
     */
     true,
 
     /*
     @param {global} this is for enabling your commands globally or locally. Default is false.
-    @type: Boolean
+    @type {Boolean}
     Required: no
     */
     false
