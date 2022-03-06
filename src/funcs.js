@@ -1,5 +1,5 @@
 /**
- * @param {functions} for the Client
+ * @param {functions} - for the Client
  */
 
 const moment = require('moment');
