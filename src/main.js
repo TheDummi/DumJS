@@ -1,6 +1,7 @@
 const { Intents } = require('discord.js');
 const config = require('./data/config.json');
 const { Client } = require('./models/Client.js');
+const { delay } = require('./models/funcs.js');
 const { CommandHandler } = require('./models/handlers/CommandHandler.js');
 
 /**
@@ -9,7 +10,7 @@ const { CommandHandler } = require('./models/handlers/CommandHandler.js');
 */
 const client = new Client({
     /**
-    * Intents are required for Discord's api v9 or above.
+    * @param {intents} - Intents are required for Discord's api v9 or above.
     * @type {number[] || FLAGS[]}
     * @required
     */
@@ -57,8 +58,8 @@ const client = new Client({
     * @type {boolean}
     */
     logging: true
-})
-
+});
+console.log(client)
 /**
 * @param {new CommandHandler()} - is a built in command handler. Requires the pervious client to be parsed through.
 * Define this, you'll need to access this later on.
@@ -66,7 +67,7 @@ const client = new Client({
 let commandHandler = new CommandHandler(client);
 
 /**
-* @param {.load()} - is used to load your commands.
+* @param {load()} - is used to load your commands.
 */
 commandHandler.load(
     /**

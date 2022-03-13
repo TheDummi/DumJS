@@ -4,10 +4,15 @@
 
 const moment = require('moment');
 
-function getTime(date) {
+function time(date) {
     return moment(Number(date)).format("H:mm:ss");
 }
 
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
+
 module.exports = {
-    getTime: getTime
+    time: time,
+    delay: delay
 }

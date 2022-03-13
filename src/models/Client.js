@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { getTime } = require('../funcs.js');
+const { time } = require('./funcs.js');
 const fs = require('fs')
 /**
  * @param {Client extends Discord.Client}
@@ -73,11 +73,13 @@ class Client extends Discord.Client {
         /** 
         * @param {client.login()} - login of the bot
         */
+
         client.login(this.token)
             .then(() => {
                 if (logging == true) {
-                    console.log(`${getTime(new Date())} | ${client.user.username} logged in.`)
+                    console.log(`${time(new Date())} | ${client.user.username} logged in.`)
                 }
+                return client;
             })
             .catch(error => {
                 throw error
