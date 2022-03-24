@@ -59,7 +59,7 @@ const client = new Client({
     */
     logging: true
 });
-console.log(client)
+
 /**
 * @param {new CommandHandler()} - is a built in command handler. Requires the pervious client to be parsed through.
 * Define this, you'll need to access this later on.
