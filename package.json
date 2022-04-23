@@ -15,9 +15,8 @@
     "discord-api-types": "^0.26.0",
     "discord.js": "^13.6.0",
     "got": "^11.8.0",
-    "moment": "^2.29.1",
-    "sequelize": "^6.13.0",
-    "sqlite3": "^5.0.2"
+    "xernerx": "^1.0.1",
+    "dumfunctions": "^1.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
